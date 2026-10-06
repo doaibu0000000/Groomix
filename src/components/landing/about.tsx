@@ -4,7 +4,7 @@ import { aboutPhoto } from "@/lib/gallery-data";
 import { Reveal } from "./reveal";
 
 const points = [
-  { icon: Ear, text: "Kami denger dulu, baru potong. Serius." },
+  { icon: Ear, text: "Kami dengerin dulu, baru potong. Serius." },
   { icon: ShieldCheck, text: "Alat disterilkan untuk tiap pelanggan." },
   { icon: HeartHandshake, text: "Nggak ada paksaan ambil layanan tambahan." },
 ];
@@ -19,7 +19,7 @@ export function About() {
               Tentang kami
             </p>
             <h2 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-              Barbershop kecil, standar tinggi.
+              Barbershop lokal, standar tinggi.
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-ink/70 sm:text-lg">
               Groomix ada di Jl. Otto Iskandardinata, Subang. Kami percaya

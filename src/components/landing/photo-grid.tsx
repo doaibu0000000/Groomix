@@ -12,7 +12,7 @@ import {
 import { galleryPhotos } from "@/lib/gallery-data";
 
 /**
- * Seluruh foto studio Groomix (dari profil Google Maps) dalam tata
+ * Seluruh foto barbershop Groomix (dari profil Google Maps) dalam tata
  * letak masonry. Mobile: 2 kolom; tablet: 3; desktop: 4.
  * Ketuk foto → lightbox dengan navigasi panah, keyboard, dan swipe.
  */

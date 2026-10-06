@@ -8,7 +8,7 @@ export function Reviews() {
     <section id="review" className="bg-ink py-16 text-cream sm:py-20 lg:py-24">
       <Reveal className="mx-auto max-w-2xl px-4 text-center sm:px-6">
         <p className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-brass-light">
-          Kata pelanggan
+          Review di Google
         </p>
 
         <div className="flex items-center justify-center gap-5">
@@ -32,8 +32,7 @@ export function Reviews() {
         </div>
 
         <p className="mx-auto mt-7 max-w-md text-base leading-relaxed text-cream/70 sm:text-lg">
-          Semua review bisa kamu baca langsung di Google — belum ada yang kami
-          sunting.
+          Semua review bisa kamu baca langsung di Google.
         </p>
 
         <Button

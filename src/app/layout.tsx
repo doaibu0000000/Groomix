@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Groomix — Barbershop di Subang | Buka Setiap Hari 10.00–22.00",
   description:
-    "Barbershop di Jl. Otto Iskandardinata No.115B, Subang. Potong rambut & cukur jenggot mulai Rp25.000. Rating 5,0 dari 23 review di Google. Walk-in atau booking via WhatsApp.",
+    "Barbershop di Jl. Otto Iskandardinata No.115B, Subang. Potong rambut & cukur jenggot mulai Rp25.000. Rating 5,0 dari 23 review di Google. Langsung datang boleh, atau chat via WhatsApp.",
   keywords: [
     "barbershop Subang",
     "potong rambut Subang",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         url: `${assetBase}/photos/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Suasana studio Groomix Barbershop di Subang",
+        alt: "Suasana barbershop Groomix di Subang",
       },
     ],
   },

@@ -6,7 +6,7 @@ import { WhatsAppIcon } from "./whatsapp-icon";
 
 /**
  * Tombol WhatsApp mengambang — jalur konversi utama.
- * Baru muncul setelah tombol "Booking via WhatsApp" di hero keluar
+ * Baru muncul setelah tombol "Chat via WhatsApp" di hero keluar
  * dari layar (tidak menutupi hero di awal), dan disembunyikan lagi
  * saat lightbox galeri terbuka agar tidak menutupi navigasi foto.
  */
@@ -48,7 +48,7 @@ export function FloatingWa() {
       href={waLink}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Booking via WhatsApp"
+      aria-label="Chat via WhatsApp"
       aria-hidden={hidden || undefined}
       tabIndex={hidden ? -1 : undefined}
       className={`fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-wa text-white shadow-xl shadow-ink/25 transition-all duration-300 hover:scale-105 hover:bg-wa/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wa sm:bottom-6 sm:right-6 ${

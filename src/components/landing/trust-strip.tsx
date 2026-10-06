@@ -1,7 +1,7 @@
 import { Clock, DoorOpen, Star, Wallet } from "lucide-react";
 
 const items = [
-  { icon: DoorOpen, title: "Walk-in welcome", desc: "Tanpa perlu reservasi" },
+  { icon: DoorOpen, title: "Langsung datang, boleh", desc: "Chat dulu biar nggak nunggu" },
   { icon: Clock, title: "Buka tiap hari", desc: "10.00–22.00 WIB" },
   { icon: Wallet, title: "Harga jujur", desc: "Mulai Rp25.000" },
   { icon: Star, title: "5,0 di Google", desc: "Dari 23 review" },

@@ -63,26 +63,14 @@ export function Footer() {
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-brass-light">
               Jam buka
             </p>
-            <ul className="mt-4 space-y-2.5 text-sm text-cream/70">
-              <li className="flex max-w-[220px] justify-between gap-6">
-                <span>Senin–Jumat</span>
-                <span>
-                  {site.openTime}–{site.closeTime}
-                </span>
-              </li>
-              <li className="flex max-w-[220px] justify-between gap-6">
-                <span>Sabtu–Minggu</span>
-                <span>
-                  {site.openTime}–{site.closeTime}
-                </span>
-              </li>
-            </ul>
+            <p className="mt-4 text-sm text-cream/70">
+              Setiap hari, {site.openTime}–{site.closeTime} WIB
+            </p>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-2 border-t border-ink-line/60 pt-6 text-xs text-cream/45 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 border-t border-ink-line/60 pt-6 text-xs text-cream/45">
           <p>© {new Date().getFullYear()} Groomix. Semua hak dilindungi.</p>
-          <p>Foto di halaman ini asli, diambil dari Google Maps.</p>
         </div>
       </div>
     </footer>

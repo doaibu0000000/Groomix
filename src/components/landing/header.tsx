@@ -81,7 +81,7 @@ export function Header() {
           >
             <a href={waLink} target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon className="h-4 w-4" />
-              Booking
+              Chat
             </a>
           </Button>
 
@@ -184,7 +184,7 @@ export function Header() {
                 >
                   <a href={waLink} target="_blank" rel="noopener noreferrer">
                     <WhatsAppIcon className="h-5 w-5" />
-                    Booking via WhatsApp
+                    Chat via WhatsApp
                   </a>
                 </Button>
               </div>

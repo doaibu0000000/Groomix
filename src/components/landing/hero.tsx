@@ -57,7 +57,7 @@ export function Hero() {
                   id="hero-booking"
                 >
                   <WhatsAppIcon className="h-5 w-5" />
-                  Booking via WhatsApp
+                  Chat via WhatsApp
                 </a>
               </Button>
               <Button
@@ -100,7 +100,7 @@ export function Hero() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-ink-line shadow-2xl shadow-black/40">
                 <Image
                   src={asset("/photos/groomix-hero.webp")}
-                  alt="Barber Groomix sedang merapikan rambut pelanggan di studio Groomix, Subang"
+                  alt="Barber Groomix sedang merapikan rambut pelanggan di barbershop Groomix, Subang"
                   fill
                   priority
                   placeholder="blur"

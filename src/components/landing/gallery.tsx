@@ -28,8 +28,7 @@ export function Gallery() {
               Lihat langsung suasananya.
             </h2>
             <p className="mt-3 text-base leading-relaxed text-cream/70 sm:text-lg">
-              {galleryPhotos.length} foto studio — diambil langsung dari profil
-              Google Groomix, tanpa edit, tanpa setting.
+              {galleryPhotos.length} foto suasana dan hasil potongan di Groomix.
             </p>
           </div>
         </Reveal>
@@ -37,7 +36,7 @@ export function Gallery() {
         <Reveal delay={0.08} y={28}>
           <div className="mt-10 flex items-baseline justify-between gap-4">
             <h3 className="font-display text-xl font-semibold sm:text-2xl">
-              Foto studio
+              Suasana barbershop
             </h3>
             <span className="shrink-0 text-xs text-cream/40">
               {galleryPhotos.length} foto · ketuk untuk perbesar
