@@ -38,8 +38,8 @@ export function Hero() {
 
           <Reveal delay={0.16}>
             <p className="mt-5 max-w-md text-base leading-relaxed text-cream/70 sm:text-lg">
-              Potong rambut & cukur jenggot di Jl. Otto Iskandardinata, Subang.
-              Datang aja langsung — atau chat dulu biar nggak nunggu.
+              Potong rambut rapi, nyaman, dan sesuai gaya kamu di Groomix,
+              Subang.
             </p>
           </Reveal>
 
