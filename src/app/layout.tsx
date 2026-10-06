@@ -16,6 +16,8 @@ const inter = Inter({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+// Aset di public/ pada GitHub Pages dilayani di bawah /<nama-repo>.
+const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/photos/og-image.jpg",
+        url: `${assetBase}/photos/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: "Suasana studio Groomix Barbershop di Subang",
@@ -53,7 +55,7 @@ export const metadata: Metadata = {
     title: "Groomix — Barbershop di Subang",
     description:
       "Duduk sebentar, pulang rapi. Buka setiap hari 10.00–22.00 di Subang.",
-    images: ["/photos/og-image.jpg"],
+    images: [`${assetBase}/photos/og-image.jpg`],
   },
   robots: { index: true, follow: true },
 };

@@ -9,6 +9,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { galleryVideos } from "@/lib/gallery-data";
+import { asset } from "@/lib/site";
 
 /**
  * Deretan video asli dari profil Google Maps Groomix.
@@ -37,7 +38,7 @@ export function VideoStrip() {
               <span className="relative block aspect-[9/16]">
                 {/* #t=0.1 → browser menampilkan frame pertama sebagai preview */}
                 <video
-                  src={`${src}#t=0.1`}
+                  src={`${asset(src)}#t=0.1`}
                   preload="metadata"
                   muted
                   playsInline
@@ -82,7 +83,7 @@ export function VideoStrip() {
               </DialogDescription>
               <video
                 key={galleryVideos[active]}
-                src={galleryVideos[active]}
+                src={asset(galleryVideos[active])}
                 controls
                 autoPlay
                 playsInline

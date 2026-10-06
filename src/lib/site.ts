@@ -34,3 +34,11 @@ export const waLink = `https://wa.me/${site.waNumber}?text=${encodeURIComponent(
 )}`;
 
 export const telLink = `tel:${site.phoneIntl}`;
+
+/**
+ * Prefix path aset statis (foto/video di public/). next/image sudah
+ * otomatis menambahkan basePath, tapi <video> dan URL di metadata
+ * tidak — di GitHub Pages basePath-nya /<nama-repo>.
+ */
+export const asset = (path: string) =>
+  `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
