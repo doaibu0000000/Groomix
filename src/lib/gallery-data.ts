@@ -101,15 +101,22 @@ const rawPhotos = [
 /**
  * Placeholder blur tersimpan sebagai base64 mentah — dibungkus menjadi
  * data URI di sini supaya next/image mendapat format yang benar.
- * src juga diberi prefix basePath secara manual: dengan images.unoptimized
- * (wajib untuk GitHub Pages), next/image tidak menambahkan basePath.
+ * src diberi prefix basePath secara manual (dengan images.unoptimized,
+ * wajib untuk GitHub Pages, next/image tidak menambahkan basePath) dan
+ * ekstensinya diarahkan ke .webp — semua foto sudah dikonversi ke
+ * WebP teroptimasi (44,6MB -> 2,8MB) supaya halaman terbuka cepat.
+ * w/h asli dipertimbangkan hanya sebagai rasio (rasio tidak berubah).
  */
 export const galleryPhotos: GalleryPhoto[] = rawPhotos.map((p) => ({
   ...p,
-  src: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${p.src}`,
+  src: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${p.src.replace(
+    /\.(png|jpe?g)$/i,
+    ".webp"
+  )}`,
   blur: `data:image/jpeg;base64,${p.blur}`,
 }));
 
 /** Foto tunggal untuk section Tentang (etalase depan). */
 export const aboutPhoto =
-  galleryPhotos.find((p) => p.src === "/photos/photo-15.png") ?? galleryPhotos[0];
+  galleryPhotos.find((p) => p.src.endsWith("/photos/photo-15.webp")) ??
+  galleryPhotos[0];
