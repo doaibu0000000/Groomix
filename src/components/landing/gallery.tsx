@@ -34,14 +34,6 @@ export function Gallery() {
         </Reveal>
 
         <Reveal delay={0.08} y={28}>
-          <div className="mt-10 flex items-baseline justify-between gap-4">
-            <h3 className="font-display text-xl font-semibold sm:text-2xl">
-              Suasana barbershop
-            </h3>
-            <span className="shrink-0 text-xs text-cream/40">
-              {galleryPhotos.length} foto · ketuk untuk perbesar
-            </span>
-          </div>
           <PhotoGrid />
         </Reveal>
       </div>

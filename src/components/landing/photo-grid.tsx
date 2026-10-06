@@ -44,7 +44,7 @@ export function PhotoGrid() {
   return (
     <>
       {/* Masonry: CSS columns */}
-      <ul className="mt-5 columns-2 gap-3 sm:columns-3 lg:columns-4">
+      <ul className="mt-10 columns-2 gap-3 sm:columns-3 lg:columns-4">
         {galleryPhotos.map((photo, i) => (
           <li key={photo.src} className="mb-3 break-inside-avoid">
             <button
