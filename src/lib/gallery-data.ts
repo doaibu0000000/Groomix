@@ -101,9 +101,12 @@ const rawPhotos = [
 /**
  * Placeholder blur tersimpan sebagai base64 mentah — dibungkus menjadi
  * data URI di sini supaya next/image mendapat format yang benar.
+ * src juga diberi prefix basePath secara manual: dengan images.unoptimized
+ * (wajib untuk GitHub Pages), next/image tidak menambahkan basePath.
  */
 export const galleryPhotos: GalleryPhoto[] = rawPhotos.map((p) => ({
   ...p,
+  src: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${p.src}`,
   blur: `data:image/jpeg;base64,${p.blur}`,
 }));
 

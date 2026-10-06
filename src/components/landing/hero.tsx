@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { site, waLink } from "@/lib/site";
+import { asset, site, waLink } from "@/lib/site";
 import { blurHero } from "@/lib/blur-data";
 import { Reveal } from "./reveal";
 import { WhatsAppIcon } from "./whatsapp-icon";
@@ -99,7 +99,7 @@ export function Hero() {
             <div className="relative mx-auto max-w-sm lg:max-w-none">
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-ink-line shadow-2xl shadow-black/40">
                 <Image
-                  src="/photos/groomix-hero.webp"
+                  src={asset("/photos/groomix-hero.webp")}
                   alt="Barber Groomix sedang merapikan rambut pelanggan di studio Groomix, Subang"
                   fill
                   priority
