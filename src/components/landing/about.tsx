@@ -4,9 +4,21 @@ import { aboutPhoto } from "@/lib/gallery-data";
 import { Reveal } from "./reveal";
 
 const points = [
-  { icon: Ear, text: "Kami dengerin dulu, baru potong. Serius." },
-  { icon: ShieldCheck, text: "Alat disterilkan untuk tiap pelanggan." },
-  { icon: HeartHandshake, text: "Nggak ada paksaan ambil layanan tambahan." },
+  {
+    icon: Ear,
+    title: "Dengarkan model yang kamu mau",
+    desc: "Kami pastikan modelnya sesuai sebelum mulai.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Alat bersih dan disiapkan untuk setiap pelanggan",
+    desc: "Kenyamanan dan kebersihan tetap kami perhatikan.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Tanpa paksaan layanan tambahan",
+    desc: "Pilih layanan sesuai kebutuhanmu.",
+  },
 ];
 
 export function About() {
@@ -19,25 +31,31 @@ export function About() {
               Tentang kami
             </p>
             <h2 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-              Barbershop lokal, standar tinggi.
+              Potongan rapi, sesuai gaya kamu.
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-ink/70 sm:text-lg">
-              Groomix ada di Jl. Otto Iskandardinata, Subang. Kami percaya
-              potongan yang bagus nggak harus rumit — cukup telaten, bersih,
-              dan sesuai kepala kamu.
+              Groomix hadir di Jl. Otto Iskandardinata, Subang, untuk kamu yang
+              ingin potong rambut dengan hasil rapi dan nyaman. Kami dengarkan
+              dulu model yang kamu mau, lalu menyesuaikannya dengan gaya dan
+              bentuk rambutmu.
             </p>
           </Reveal>
 
           <Reveal delay={0.12}>
             <ul className="mt-8 space-y-4">
               {points.map((point) => (
-                <li key={point.text} className="flex items-start gap-3.5">
+                <li key={point.title} className="flex items-start gap-3.5">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brass/15 text-brass-strong">
                     <point.icon className="h-4.5 w-4.5" aria-hidden="true" />
                   </span>
-                  <span className="pt-1.5 text-sm text-ink/80 sm:text-base">
-                    {point.text}
-                  </span>
+                  <div className="pt-0.5">
+                    <p className="text-sm font-semibold text-ink sm:text-base">
+                      {point.title}
+                    </p>
+                    <p className="mt-0.5 text-sm leading-relaxed text-ink/60">
+                      {point.desc}
+                    </p>
+                  </div>
                 </li>
               ))}
             </ul>

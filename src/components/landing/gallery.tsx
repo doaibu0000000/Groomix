@@ -28,7 +28,7 @@ export function Gallery() {
               Lihat langsung suasananya.
             </h2>
             <p className="mt-3 text-base leading-relaxed text-cream/70 sm:text-lg">
-              {galleryPhotos.length} foto suasana dan hasil potongan di Groomix.
+              Lihat suasana Groomix dan hasil potongan kami.
             </p>
           </div>
         </Reveal>
