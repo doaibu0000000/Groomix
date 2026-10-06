@@ -1,6 +1,5 @@
-import { galleryPhotos, galleryVideos } from "@/lib/gallery-data";
+import { galleryPhotos } from "@/lib/gallery-data";
 import { Reveal } from "./reveal";
-import { VideoStrip } from "./video-strip";
 import { PhotoGrid } from "./photo-grid";
 
 export function Gallery() {
@@ -29,27 +28,14 @@ export function Gallery() {
               Lihat langsung suasananya.
             </h2>
             <p className="mt-3 text-base leading-relaxed text-cream/70 sm:text-lg">
-              {galleryVideos.length} video dan {galleryPhotos.length} foto
-              studio — diambil langsung dari profil Google Groomix, tanpa edit,
-              tanpa setting.
+              {galleryPhotos.length} foto studio — diambil langsung dari profil
+              Google Groomix, tanpa edit, tanpa setting.
             </p>
           </div>
         </Reveal>
 
         <Reveal delay={0.08} y={28}>
           <div className="mt-10 flex items-baseline justify-between gap-4">
-            <h3 className="font-display text-xl font-semibold sm:text-2xl">
-              Video suasana
-            </h3>
-            <span className="shrink-0 text-xs text-cream/40">
-              {galleryVideos.length} video
-            </span>
-          </div>
-          <VideoStrip />
-        </Reveal>
-
-        <Reveal delay={0.12} y={28}>
-          <div className="mt-12 flex items-baseline justify-between gap-4">
             <h3 className="font-display text-xl font-semibold sm:text-2xl">
               Foto studio
             </h3>

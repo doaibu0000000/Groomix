@@ -110,16 +110,6 @@ export const galleryPhotos: GalleryPhoto[] = rawPhotos.map((p) => ({
   blur: `data:image/jpeg;base64,${p.blur}`,
 }));
 
-/** Video asli dari profil Google Maps Groomix. */
-export const galleryVideos = [
-  "/videos/video-01.mp4",
-  "/videos/video-02.mp4",
-  "/videos/video-03.mp4",
-  "/videos/video-04.mp4",
-  "/videos/video-05.mp4",
-  "/videos/video-06.mp4",
-] as const;
-
 /** Foto tunggal untuk section Tentang (etalase depan). */
 export const aboutPhoto =
   galleryPhotos.find((p) => p.src === "/photos/photo-15.png") ?? galleryPhotos[0];
